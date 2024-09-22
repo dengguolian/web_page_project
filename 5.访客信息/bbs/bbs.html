@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/model.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>访客信息</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+
+
+<style type="text/css">
+body,td,th {
+	font-size: 14px;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+</style>
+<script type="text/javascript">
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+</script>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	background-image: url(../images/bgfill.jpg);
+}
+#div0 {
+	background-color: #FFF;
+	width: 1000px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#div1 {
+	height: 200px;
+	width: 1000px;
+}
+#div2 {
+	background-image: url(../images/dh.jpg);
+	height: 34px;
+	width: 1000px;
+}
+#div3 {
+	width: 1000px;
+}
+#div4 {
+	font-size: 14px;
+	text-align: center;
+	height: 28px;
+	width: 1000px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+#div0 #div2 ul {
+	display: inline;
+	list-style-image: none;
+	list-style-type: none;
+}
+#div0 #div2 ul li {
+	font-size: 14px;
+	font-weight: bolder;
+	color: #366;
+	float: left;
+	width: 80px;
+	margin-top: 8px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 30px;
+	list-style-image: none;
+	list-style-type: none;
+}
+a:link {
+	color: #336666;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #336666;
+}
+a:hover {
+	text-decoration: underline;
+	color: #336666;
+}
+a:active {
+	text-decoration: none;
+	color: #336666;
+}
+</style>
+<script type="text/javascript">
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+</script>
+</head>
+
+<body>
+<div id="div0">
+  <div id="div1"><img src="../images/title.jpg" width="1000" height="200" /></div>
+  <div id="div2">
+    <ul>
+      <li><a href="../index.html">首页</a></li>
+      <li><a href="../study/study.html">专业教程</a></li>
+      <li><a href="../works/works.html">作品展示</a></li>
+      <li><a href="../travel/travel.html">家乡山水</a></li>
+      <li><a href="bbs.html">访客信息</a></li>
+      <li><a href="#" onclick="MM_openBrWindow('../diary/diary.html','心情日记','resizable=yes,width=900,height=500')">心情日记</a></li>
+    </ul>
+  </div>
+  <div id="div3"><!-- InstanceBeginEditable name="EditRegion3" -->
+<form action="send.html" method="post" enctype="multipart/form-data" name="form1" id="form1">
+  <table width="800" border="1" align="center">
+    <tr>
+      <td width="72">留言标题</td>
+      <td><label for="username"></label>
+      <label for="title"></label>
+      <label for="title"></label>
+      <input name="title" type="text" id="title" value="请在这里输入留言标题！" /></td>
+    </tr>
+    <tr>
+      <td>留言人姓名</td>
+      <td><label for="username"></label>
+      <input name="username" type="text" id="username" maxlength="10" /></td>
+    </tr>
+    <tr>
+      <td>性别</td>
+      <td><input name="radiobutton1" type="radio" id="radio" value="rb11" checked="checked" />
+      <label for="radiobutton1">帅哥
+        <input type="radio" name="radiobutton1" id="radio2" value="rb12" />
+      美女
+      <input type="radio" name="radiobutton1" id="radio3" value="rb13" />
+      保密</label></td>
+    </tr>
+    <tr>
+      <td>年龄</td>
+      <td><select name="select" id="select">
+        <option value="15" selected="selected">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td>选择头像</td>
+      <td><label>
+        <input type="radio" name="RadioGroup1" value="an1" id="RadioGroup1_0" />
+      </label>
+        <img src="bbsimages/f1.GIF" width="98" height="98" />
+        <label>
+          <input type="radio" name="RadioGroup1" value="an2" id="RadioGroup1_1" />
+        </label>
+        <img src="bbsimages/f2.GIF" width="98" height="98" />
+        <label>
+          <input type="radio" name="RadioGroup1" value="an3" id="RadioGroup1_2" />
+        </label>
+        <img src="bbsimages/f3.GIF" width="98" height="98" />
+        <label>
+          <input type="radio" name="RadioGroup1" value="an4" id="RadioGroup1_3" />
+        </label>
+        <img src="bbsimages/f4.GIF" width="98" height="98" />
+        <label>
+          <input type="radio" name="RadioGroup1" value="an5" id="RadioGroup1_4" />
+        </label>
+        <img src="bbsimages/f5.GIF" width="98" height="98" /><br />
+        <label>
+          <input type="radio" name="RadioGroup1" value="an6" id="RadioGroup1_5" />
+        </label>
+        <img src="bbsimages/f6.GIF" width="98" height="98" />
+        <label>
+          <input type="radio" name="RadioGroup1" value="an7" id="RadioGroup1_6" />
+        </label>
+        <img src="bbsimages/f7.GIF" width="98" height="98" />
+        <label>
+          <input type="radio" name="RadioGroup1" value="an8" id="RadioGroup1_7" />
+        </label>
+        <img src="bbsimages/f8.GIF" width="98" height="98" />
+        <label>
+          <input type="radio" name="RadioGroup1" value="an9" id="RadioGroup1_8" />
+        </label>
+        <img src="bbsimages/f9.GIF" width="98" height="98" />
+        <label>
+          <input type="radio" name="RadioGroup1" value="an10" id="RadioGroup1_9" />
+        </label>
+      <img src="bbsimages/f10.GIF" width="98" height="98" /></td>
+    </tr>
+    <tr>
+      <td>自定义头像</td>
+      <td><p>
+        <input type="file" name="fileField" id="fileField" />
+        <br />
+      </p></td>
+    </tr>
+    <tr>
+      <td>电子邮件</td>
+      <td><input type="text" name="Email" id="Email" /></td>
+    </tr>
+    <tr>
+      <td>个人网站</td>
+      <td><label for="WebSite"></label>
+      <input type="text" name="WebSite" id="WebSite" /></td>
+    </tr>
+    <tr>
+      <td>个人爱好</td>
+      <td><input name="checkbox1" type="checkbox" id="checkbox1" value="fx1" />
+        <label for="checkbox1">看书</label>
+        <label for="checkbox1">
+        <input name="checkbox2" type="checkbox" id="checkbox2" value="fx2" />
+      旅游
+      <input name="checkbox3" type="checkbox" id="checkbox3" value="fx3" />
+      购物
+      <input name="checkbox4" type="checkbox" id="checkbox4" value="fx4" />
+      上网
+      <input name="checkbox5" type="checkbox" id="checkbox5" value="fx5" />
+      电影
+      <input name="checkbox6" type="checkbox" id="checkbox6" value="fx6" />
+      唱歌
+      <input name="checkbox7" type="checkbox" id="checkbox7" value="fx7" />
+      游泳
+      <input name="checkbox8" type="checkbox" id="checkbox8" value="fx8" />
+      爬山
+      <input name="checkbox9" type="checkbox" id="checkbox9" value="fx9" />
+      象棋
+      <input name="checkbox10" type="checkbox" id="checkbox10" value="fx10" />
+      跑步
+      <input name="checkbox11" type="checkbox" id="checkbox11" value="fx11" />
+      其他</label></td>
+    </tr>
+    <tr>
+      <td>留言内容</td>
+      <td><textarea name="textarea" id="textarea" cols="50" rows="5"></textarea></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input name="button" type="submit" id="button" onclick="MM_validateForm('username','','R','Email','','NisEmail');return document.MM_returnValue" value="提交" />
+      <input type="reset" name="button2" id="button2" value="重置" /></td>
+    </tr>
+  </table>
+</form>
+<!-- InstanceEndEditable --></div>
+  <div id="div4">版权所有：悠悠我心    <a href="mailto:youyouwoxin@163.com">欢迎来信 </a>  QQ:123456789</div>
+</div>
+</body>
+<!-- InstanceEnd --></html>
